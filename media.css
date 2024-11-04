@@ -1,0 +1,79 @@
+@media screen and (max-width:900px){
+    .carousel-inner {
+        height: auto !important;
+    }
+    .carousel-caption{
+        top: 5rem !important;
+    }
+    .carousel-caption h1{
+        font-size: 50px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+    .carousel-caption a{
+        font-size: 15px;
+    }
+
+    /* section 5  */
+
+
+}
+@media screen and (max-width:767px){
+    .carousel-caption{
+        top: 5rem !important;
+    }
+    .carousel-caption h1{
+        font-size: 40px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+    }
+    .carousel-caption a{
+        font-size: 14px;
+    }
+    /* section 1  */
+    .parent_cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 20px;
+    }
+    /* section 2  */
+    .img_gallery{
+        grid-template-columns: 100%;
+        row-gap: 10px;
+    }
+    /* section 3  */
+
+
+}
+
+
+@media screen and (max-width:450px){
+    .carousel-caption{
+        width: 100% !important;
+        left: 0px;
+    }
+    .carousel-caption{
+        top: 0rem !important;
+    }
+    .carousel-caption h1{
+        font-size: 30px;
+    letter-spacing: 3px;
+
+    }
+    .carousel-caption p{
+        font-size: 12px;
+    }
+    .carousel-caption a{
+        font-size: 12px;
+    }
+        /* section 1  */
+        .parent_cards{
+            display: grid;
+            grid-template-columns: 100%;
+            row-gap: 20px;
+        }
+
+        /* section 3  */
+}
