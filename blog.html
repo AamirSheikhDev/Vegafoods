@@ -17,114 +17,300 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
   integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Animation link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+
+
+        .bg-img {
+            height: 400px !important;
+            object-fit: cover;
+        }
+    .blog-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .blog-item {
+      margin-bottom: 30px;
+    }
+    .sidebar {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .sidebar a{
+      text-decoration: none;
+      color: gray;
+    }
+    .tag-cloud a {
+      display: inline-block;
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: #e9ecef;
+      border-radius: 3px;
+      color: #343a40;
+      text-decoration: none;
+    }
+
+  </style>
 
 </head>
 <body>
-    <header>
-        <div class="info_line">
-            <div class="container">
-              <div class="row text-white">
+  <header data-aos="fade-up">
+    <div class="info_line">
+        <div class="container">
+            <div class="row text-white">
                 <div class="col-lg-4 col-">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px" fill="#fff">
-                    <path
-                      d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" />
-                  </svg> + 1235 2355 98
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px"
+                        fill="#fff">
+                        <path
+                            d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" />
+                    </svg> + 1235 2355 98
                 </div>
                 <div class="col-lg-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px" fill="#fff">
-                    <path
-                      d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z" />
-                  </svg> Aamirsheikh.dev@gmail.com
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px"
+                        fill="#fff">
+                        <path
+                            d="M168-192q-29.7 0-50.85-21.16Q96-234.32 96-264.04v-432.24Q96-726 117.15-747T168-768h624q29.7 0 50.85 21.16Q864-725.68 864-695.96v432.24Q864-234 842.85-213T792-192H168Zm312-240L168-611v347h624v-347L480-432Zm0-85 312-179H168l312 179Zm-312-94v-85 432-347Z" />
+                    </svg> Aamirsheikh.dev@gmail.com
                 </div>
                 <div class="col-lg-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px" fill="#fff">
-                    <path
-                      d="M240-192q-50 0-85-35t-35-85H48v-408q0-29.7 21.15-50.85Q90.3-792 120-792h552v144h120l120 168v168h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-72q20.4 0 34.2-13.8Q288-291.6 288-312q0-20.4-13.8-34.2Q260.4-360 240-360q-20.4 0-34.2 13.8Q192-332.4 192-312q0 20.4 13.8 34.2Q219.6-264 240-264ZM120-384h24q17-23 42-35.5t54-12.5q29 0 54 12.5t41.53 35.5H600v-336H120v336Zm600 120q20.4 0 34.2-13.8Q768-291.6 768-312q0-20.4-13.8-34.2Q740.4-360 720-360q-20.4 0-34.2 13.8Q672-332.4 672-312q0 20.4 13.8 34.2Q699.6-264 720-264Zm-48-192 168-1-85-119h-83v120Zm-310-93Z" />
-                  </svg> 3-5 Business days delivery & Free Returns
+                    <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="20px"
+                        fill="#fff">
+                        <path
+                            d="M240-192q-50 0-85-35t-35-85H48v-408q0-29.7 21.15-50.85Q90.3-792 120-792h552v144h120l120 168v168h-72q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-72q20.4 0 34.2-13.8Q288-291.6 288-312q0-20.4-13.8-34.2Q260.4-360 240-360q-20.4 0-34.2 13.8Q192-332.4 192-312q0 20.4 13.8 34.2Q219.6-264 240-264ZM120-384h24q17-23 42-35.5t54-12.5q29 0 54 12.5t41.53 35.5H600v-336H120v336Zm600 120q20.4 0 34.2-13.8Q768-291.6 768-312q0-20.4-13.8-34.2Q740.4-360 720-360q-20.4 0-34.2 13.8Q672-332.4 672-312q0 20.4 13.8 34.2Q699.6-264 720-264Zm-48-192 168-1-85-119h-83v120Zm-310-93Z" />
+                    </svg> 3-5 Business days delivery & Free Returns
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- Navbar start here  -->
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                  <div class="container">
-                    <a class="navbar-brand fs-4 fw-bold" href="#">VEGEFOODS</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-      
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item px-3 ">
-                          <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item dropdown px-3">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            SHOP
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="shop.html">Shop</a></li>
-                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                            <li><a class="dropdown-item" href="about.html">About us</a></li>
-                            <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
-                          </ul>
-                        </li>
-      
-                        <li class="nav-item px-3">
-                          <a class="nav-link" href="about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item px-3">
-                          <a class="nav-link" href="blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item px-3">
-                          <a class="nav-link" href="#">CONTACT</a>
-                        </li>
-                        <li class="nav-item px-3">
-                          <a class="nav-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
-                              fill="#5f6368">
-                              <path
-                                d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-                            </svg>[0]
-                          </a>
-                        </li>
-      
-      
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-      
-              </div>
-            </div>
-          </div>
-          <!-- Slider here  -->
-    <div class="Slider_hero">
-      <div class="container-fluid">
+        </div>
+    </div>
+    <!-- Navbar start here  -->
+    <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="images/bg_1.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
-                  <div class="overlay"></div>
-                  <div class="carousel-caption my-5 py-5 d-md-block">
-                    <h2><a class="fs-5" href="index.html">Home</a> </h2>
-                    <p class="fs-1 fw-bold">Blog</p>
-                  </div>
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container">
+                        <a class="navbar-brand fs-4 fw-bold" href="#">VEGEFOODS</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item px-3 ">
+                                    <a class="nav-link active " aria-current="page" href="index.html">HOME</a>
+                                </li>
+                                <li class="nav-item dropdown px-3">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="shop.html">Shop</a></li>
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="about.html">About us</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="blog.html">BLOG</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="contact.html">CONTACT</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                                            viewBox="0 -960 960 960" width="20px" fill="#5f6368">
+                                            <path
+                                                d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                                        </svg>[0]
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+    <!-- Slider here  -->
+    <div class="Slider_hero" >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="images/bg_1.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
+                                <div class="overlay"></div>
+                                <div class="carousel-caption my-5 py-5 d-md-block">
+                                    <h2><a class="fs-5 text-decoration-none text-white " href="index.html">Home</a>
+                                    </h2>
+                                    <p class="fs-1 fw-bold">Products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-8">
+          <!-- Blog Post Loop Start -->
+          <div class="blog-item my-5"  data-aos="fade-up">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/image_1.jpg"  alt="Blog image">
               </div>
+              <div class="col-md-8">
+                <p><small>July 20, 2019 | Admin | 3 Comments</small></p>
+                <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a href="#" class="btn btn-success">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-item my-5" data-aos="fade-up">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/image_3.jpg"  alt="Blog image">
+              </div>
+              <div class="col-md-8">
+                <p><small>July 20, 2019 | Admin | 3 Comments</small></p>
+                <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a href="#" class="btn btn-success">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-item my-5" data-aos="fade-up">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/image_5.jpg"  alt="Blog image">
+              </div>
+              <div class="col-md-8">
+                <p><small>July 20, 2019 | Admin | 3 Comments</small></p>
+                <h5>Even the all-powerful Pointing has no control about the blind texts</h5>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <a href="#" class="btn btn-success">Read more</a>
+              </div>
+            </div>
+          </div>
+          <!-- Repeat blog-item div for more blog posts -->
+          <!-- End of Blog Post Loop -->
+        </div>
+        
+        <!-- Sidebar -->
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="sidebar">
+            <div class="mb-4">
+              <h5>Search</h5>
+              <form action="#">
+                <input type="text" class="form-control" placeholder="search...">
+              </form>
+            </div>
+            
+            <div class="mb-4">
+              <h5>Categories</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Vegetables (12)</a></li>
+                <li><a href="#">Fruits (22)</a></li>
+                <li><a href="#">Juice (37)</a></li>
+                <li><a href="#">Dried (42)</a></li>
+              </ul>
+            </div>
+    
+            <div class="mb-4">
+              <h5>Recent Blog</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></li>
+                <li><a href="#">Far from the countries Vokalia and Consonantia</a></li>
+                <li><a href="#">The Big Oxmox advised her not to do so</a></li>
+              </ul>
+            </div>
+    
+            <div class="mb-4">
+              <h5>Tag Cloud</h5>
+              <div class="tag-cloud">
+                <a href="#">Fruits</a>
+                <a href="#">Tomato</a>
+                <a href="#">Mango</a>
+                <a href="#">Apple</a>
+                <a href="#">Carrots</a>
+                <a href="#">Onion</a>
+                <a href="#">Pepper</a>
+              </div>
+            </div>
+    
+            <div>
+              <h5>Paragraph</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dulcis fruere, quorum necessitibus ut voluptate!</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </header>
+    
+    <!-- Footer -->
+    <footer class="py-0 my-0" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3" data-aos="fade-up">
+            <h4 class="fs-5 py-2">VegeFoods</h4>
+            <p class="py-3 lh-base">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            <div class="icon-list py-2">
+              <i class=" fs-3 fa-brands fa-twitter">  </i>
+              <i class=" fs-3 fa-brands fa-instagram"></i>
+              <i class=" fs-3 fa-brands fa-facebook"></i>
+            </div>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h4 class="fs-5 py-2">Menu</h4>
+            <ul class="list-unstyled">
+              <li><a class="py-2 d-block" href="shop.html">Shop</a></li>
+              <li><a class="py-2 d-block" href="about.html">About</a></li>
+              <li><a class="py-2 d-block" href="blog.html">Blog</a></li>
+              <li><a class="py-2 d-block" href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h4 class="fs-5 py-2">Help</h4>
+            <ul  class="list-unstyled">
+              <li><a class="py-2 d-block" href="#">Shipping Information </a></li>
+              <li><a class="py-2 d-block" href="#">Returns & Exchange</a></li>
+              <li><a class="py-2 d-block" href="#">Terms & Conditions</a></li>
+              <li><a class="py-2 d-block" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3" data-aos="fade-up">
+            <h4 class="fs-5 py-2">Have a Question ?</h4>
+            <ul  class="list-unstyled">
+              <li class="py-2 d-block"> <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg> Khajrana, Indore, Madhya Pradesh, India </li>
+              <li class="py-2 d-block"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> +91-6260950096</li>
+              <li class="py-2 d-block">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg> AamirSheikh.Dev@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     </footer>
+  <!-- footer end   -->
 
 
 
@@ -133,6 +319,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
   crossorigin="anonymous"></script>
+  <!-- Animation link  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800, // Animation duration in milliseconds
+      offset: 200,   // Offset from the original trigger point
+      once: true     // Animation will happen only once
+    });
+  </script>
+<!-- Javascript Link here  -->
 <!-- Javascript Link here  -->
 <script src="brain.js"></script>
 </body>

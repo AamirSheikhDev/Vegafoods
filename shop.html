@@ -16,11 +16,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- Animation link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <style>
+        .bg-img {
+            height: 400px !important;
+            object-fit: cover;
+        }
 
+        .carousel-caption {
+            top: 4rem !important;
+            color: white !important;
+        }
+
+  </style>
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-up">
         <div class="info_line">
             <div class="container">
                 <div class="row text-white">
@@ -86,7 +99,7 @@
                                         <a class="nav-link" href="blog.html">BLOG</a>
                                     </li>
                                     <li class="nav-item px-3">
-                                        <a class="nav-link" href="#">CONTACT</a>
+                                        <a class="nav-link" href="contact.html">CONTACT</a>
                                     </li>
                                     <li class="nav-item px-3">
                                         <a class="nav-link" href="#">
@@ -108,7 +121,7 @@
             </div>
         </div>
         <!-- Slider here  -->
-        <div class="Slider_hero">
+        <div class="Slider_hero" >
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -118,9 +131,9 @@
                                     <img src="images/bg_1.jpg" class="bg-img d-block w-100 img-fluid" alt="...">
                                     <div class="overlay"></div>
                                     <div class="carousel-caption my-5 py-5 d-md-block">
-                                        <h2><a class="fs-3 text-decoration-none text-white " href="index.html">Home</a>
+                                        <h2><a class="fs-5 text-decoration-none text-white " href="index.html">Home</a>
                                         </h2>
-                                        <p class="fs-1 fw-bold">Contact Us</p>
+                                        <p class="fs-1 fw-bold">Products</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,166 +145,278 @@
     </header>
 
     <!-- section product cards  -->
-    <section class="py-1 my-1">
-        <div class="container my-5 py-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 p-0">
-                    <div class="products_cards text-center">
-                        <div class="product-img new-for-before img-fluid"
-                            style="background-image: url(images/product-5.jpg); background-size: 100% 100%;;">
-                        </div>
-                        <div class="product_details text-center">
-                            <h4 class="fs-5" style="font-weight: 100;">Tomatoe</h4>
-                            <p><del class="text-muted"> $120.00 </del><span style="color: #82AE46;">&nbsp; $80.00
-                                </span></p>
-                        </div>
-                        <div class="on_hover ">
-                            <a class=" px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
-                                </svg>
-                            </a>
-                            <a class=" px-1 py-1 rounded-circle"
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-                                </svg>
-                            </a>
-                            <a class="px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 p-0">
-                    <div class="products_cards text-center">
-                        <div class="product-img img-fluid"
-                            style="background-image: url(images/product-6.jpg); background-size: 100% 100%;;">
-                        </div>
-                        <div class="product_details text-center">
-                            <h4 class="fs-5 " style="font-weight: 100; ">Brocolli</h4>
-                            <p><span style="color: #82AE46;"></span>$120.00</p>
-                        </div>
-                        <div class="on_hover ">
-                            <a class=" px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
-                                </svg>
-                            </a>
-                            <a class=" px-1 py-1 rounded-circle"
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-                                </svg>
-                            </a>
-                            <a class="px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 p-0">
-                    <div class="products_cards text-center">
-                        <div class="product-img img-fluid"
-                            style="background-image: url(images/product-7.jpg); background-size: 100% 100%;;">
-                        </div>
-                        <div class="product_details text-center">
-                            <h4 class="fs-5" style="font-weight: 100;">Carrots</h4>
-                            <p><span style="color: #82AE46;"></span>$120.00</p>
-                        </div>
-                        <div class="on_hover ">
-                            <a class=" px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
-                                </svg>
-                            </a>
-                            <a class=" px-1 py-1 rounded-circle"
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-                                </svg>
-                            </a>
-                            <a class="px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-12 p-0">
-                    <div class="products_cards text-center">
-                        <div class="product-img img-fluid"
-                            style="background-image: url(images/product-8.jpg); background-size: 100% 100%;;">
-                        </div>
-                        <div class="product_details text-center">
-                            <h4 class="fs-5" style="font-weight: 100;">Fruit Juice</h4>
-                            <p><span style="color: #82AE46;"></span>$120.00</p>
-
-                        </div>
-                        <div class="on_hover ">
-                            <a class=" px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
-                                </svg>
-                            </a>
-                            <a class=" px-1 py-1 rounded-circle"
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
-                                </svg>
-                            </a>
-                            <a class="px-1 py-1 rounded-circle "
-                                style="text-decoration: none; background-color: #82AE46;" href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
-                                    width="20px" fill="#fff">
-                                    <path
-                                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+    <section class="py-1 my-1" >
+        <div class="container" >
+    
+          <div class="row" style="margin: 30px 0px !important ;"data-aos="fade-up" >
+            <div class="our_product_sec text-center" style="margin-bottom: 80px;">
+              <h4 class="my-1 fs-5 " style="font-family:Georgia,serif;color: #82AE46;letter-spacing: 4px;">Featured Products
+              </h4>
+              <h2 class="my-3 fs-1 fw-bold">OUR PRODUCTS</h2>
+              <p class="my-2 text-muted">Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia</p>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0 m-0"data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img new-for-before img-fluid"
+                  style="background-image: url(images/product-1.jpg); background-size: 100% 100%;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Bell Pepper</h4>
+                  <p><del class="text-muted"> $120.00 </del><span style="color: #82AE46;">&nbsp; $80.00 </span></p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12  p-0"data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-2.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5 " style="font-weight: 100; ">Strawberry</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12  p-0"data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-3.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Green Beans</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12  p-0"data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-4.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Purple Cabbage</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+    
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0" data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img new-for-before img-fluid"
+                  style="background-image: url(images/product-5.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Tomatoe</h4>
+                  <p><del class="text-muted"> $120.00 </del><span style="color: #82AE46;">&nbsp; $80.00 </span></p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0" data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-6.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5 " style="font-weight: 100; ">Brocolli</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0" data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-7.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Carrots</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 col-sm-12 p-0" data-aos="fade-up">
+              <div class="products_cards text-center">
+                <div class="product-img img-fluid"
+                  style="background-image: url(images/product-8.jpg); background-size: 100% 100%;;">
+                </div>
+                <div class="product_details text-center">
+                  <h4 class="fs-5" style="font-weight: 100;">Fruit Juice</h4>
+                  <p><span style="color: #82AE46;"></span>$120.00</p>
+    
+                </div>
+                <div class="on_hover ">
+                  <a class=" px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z" />
+                    </svg>
+                  </a>
+                  <a class=" px-1 py-1 rounded-circle" style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="M263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM253-696l83 192h301l82-192H253Zm-31-72h570q14 0 20.5 11t1.5 23L702.63-476.14Q694-456 676.5-444T637-432H317l-42 72h493v72H276q-43 0-63.5-36.15-20.5-36.16.5-71.85l52-90-131-306H48v-72h133l41 96Zm114 264h301-301Z" />
+                    </svg>
+                  </a>
+                  <a class="px-1 py-1 rounded-circle " style="text-decoration: none; background-color: #82AE46;" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff">
+                      <path
+                        d="m480-144-50-45q-100-89-165-152.5t-102.5-113Q125-504 110.5-545T96-629q0-89 61-150t150-61q49 0 95 21t78 59q32-38 78-59t95-21q89 0 150 61t61 150q0 43-14 83t-51.5 89q-37.5 49-103 113.5T528-187l-48 43Zm0-97q93-83 153-141.5t95.5-102Q764-528 778-562t14-67q0-59-40-99t-99-40q-35 0-65.5 14.5T535-713l-35 41h-40l-35-41q-22-26-53.5-40.5T307-768q-59 0-99 40t-40 99q0 33 13 65.5t47.5 75.5q34.5 43 95 102T480-241Zm0-264Z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+    
         </div>
-    </section>
+      </section>
     <!-- section product-cards end  -->
 
     <!-- info  -->
-    <section class=" py-5" style="background-color: #F7F6F2;">
+    <section class=" py-5" style="background-color: #F7F6F2;" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-between align-item-center ">
                 <div class="col-lg-3  p-4 " style="background-color: white;">
@@ -315,62 +440,49 @@
 
 
     <!-- footer start  -->
-    <footer class="py-5 my-2">
+    <footer class="py-5 my-2" data-aos="fade-up">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <h4 class="fs-5 py-2">VegeFoods</h4>
-                    <p class="py-3 lh-base">Far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia.</p>
-                    <div class="icon-list py-2">
-                        <i class=" fs-3 fa-brands fa-twitter"> </i>
-                        <i class=" fs-3 fa-brands fa-instagram"></i>
-                        <i class=" fs-3 fa-brands fa-facebook"></i>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <h4 class="fs-5 py-2">Menu</h4>
-                    <ul class="list-unstyled">
-                        <li><a class="py-2 d-block" href="#">Shop</a></li>
-                        <li><a class="py-2 d-block" href="#">About</a></li>
-                        <li><a class="py-2 d-block" href="#">Journal</a></li>
-                        <li><a class="py-2 d-block" href="#">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4 class="fs-5 py-2">Help</h4>
-                    <ul class="list-unstyled">
-                        <li><a class="py-2 d-block" href="#">Shipping Information </a></li>
-                        <li><a class="py-2 d-block" href="#">Returns & Exchange</a></li>
-                        <li><a class="py-2 d-block" href="#">Terms & Conditions</a></li>
-                        <li><a class="py-2 d-block" href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h4 class="fs-5 py-2">Have a Question ?</h4>
-                    <ul class="list-unstyled">
-                        <li class="py-2 d-block"> <svg xmlns="http://www.w3.org/2000/svg" height="20px"
-                                viewBox="0 -960 960 960" width="20px" fill="#5f6368">
-                                <path
-                                    d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
-                            </svg> Khajrana, Indore, Madhya Pradesh, India </li>
-                        <li class="py-2 d-block"><svg xmlns="http://www.w3.org/2000/svg" height="20px"
-                                viewBox="0 -960 960 960" width="20px" fill="#5f6368">
-                                <path
-                                    d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
-                            </svg> +91-6260950096</li>
-                        <li class="py-2 d-block">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
-                                fill="#5f6368">
-                                <path
-                                    d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
-                            </svg> AamirSheikh.Dev@gmail.com
-                        </li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <h4 class="fs-5 py-2">VegeFoods</h4>
+              <p class="py-3 lh-base">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+              <div class="icon-list py-2">
+                <i class=" fs-3 fa-brands fa-twitter">  </i>
+                <i class=" fs-3 fa-brands fa-instagram"></i>
+                <i class=" fs-3 fa-brands fa-facebook"></i>
+              </div>
             </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5 py-2">Menu</h4>
+              <ul class="list-unstyled">
+                <li><a class="py-2 d-block" href="shop.html">Shop</a></li>
+                <li><a class="py-2 d-block" href="about.html">About</a></li>
+                <li><a class="py-2 d-block" href="blog.html">Blog</a></li>
+                <li><a class="py-2 d-block" href="contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5 py-2">Help</h4>
+              <ul  class="list-unstyled">
+                <li><a class="py-2 d-block" href="#">Shipping Information </a></li>
+                <li><a class="py-2 d-block" href="#">Returns & Exchange</a></li>
+                <li><a class="py-2 d-block" href="#">Terms & Conditions</a></li>
+                <li><a class="py-2 d-block" href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="fs-5 py-2">Have a Question ?</h4>
+              <ul  class="list-unstyled">
+                <li class="py-2 d-block"> <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg> Khajrana, Indore, Madhya Pradesh, India </li>
+                <li class="py-2 d-block"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg> +91-6260950096</li>
+                <li class="py-2 d-block">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg> AamirSheikh.Dev@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </footer>
+       </footer>
     <!-- footer end   -->
 
 
@@ -378,6 +490,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <!-- Animation link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script>
+          // Initialize AOS
+          AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            offset: 200,   // Offset from the original trigger point
+            once: true     // Animation will happen only once
+          });
+        </script>
+      <!-- Javascript Link here  -->
     <!-- Javascript Link here  -->
     <script src="brain.js"></script>
 
